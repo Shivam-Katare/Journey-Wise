@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gradient-color {
+  background: linear-gradient(90deg, #ff00af 0%, #e73ab3 10%, #b04ad3 30%, #612cfd 40%, #3c83a2 50%, #0094ff 70%, #00b2eb 80%, #00d0c9 100%);
+  color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.kode-mono {
+  font-family: "Kode Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sigmar {
+  font-family: "Sigmar", sans-serif;
+  font-weight: 900;
+}
+
+.animation-text {
+  position: relative;
+  height: 1.2em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.animation-text span {
+  position: absolute;
+  opacity: 0;
+  animation: change-text 12s linear infinite 0s;
+}
+
+.animation-text span:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.animation-text span:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.animation-text span:nth-child(4) {
+  animation-delay: 9s;
+}
+
+@keyframes change-text {
+  0% { opacity: 0; top: -30px; }
+  5%, 25% { opacity: 1; top: 0px; }
+  30%, 100% { opacity: 0; top: 30px; }
+}
